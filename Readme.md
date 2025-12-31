@@ -33,8 +33,7 @@ Este repositório será atualizado conforme avanço no curso. 🚀
 
 - Extensão **C/C++ (Microsoft)** no VS Code
 
-<br>
-<br>
+---
 
 ### 1 Mario
 <details>
@@ -83,3 +82,57 @@ gcc mario.c -o mario <br>
 ./mario.exe
 
 </details>
+
+---
+
+### 2 MarioDesafio
+<details>
+<summary>🍄 Pirâmides Duplas</summary>
+
+Neste segundo desafio do CC50, inspirado no início do mundo **World 1-1 de Super Mario Bros**, o objetivo é construir **duas pirâmides de tijolos** lado a lado, usando `#`, separadas por dois espaços, e alinhadas conforme a altura escolhida pelo usuário.
+
+## 🎯 Objetivo do Programa
+- Solicitar ao usuário um inteiro entre **1 e 8**.
+- Validar a entrada (repetir até ser um valor válido).
+- Construir duas pirâmides espelhadas, separadas por **dois espaços**.
+- Exibir o resultado em formato de texto no terminal.
+
+## 📌 Exemplos de Funcionamento
+
+Entrada: 4
+```
+   #  #
+  ##  ##
+ ###  ###
+####  ####
+```
+
+Entrada: 8
+```
+       #  #
+      ##  ##
+     ###  ###
+    ####  ####
+   #####  #####
+  ######  ######
+ #######  #######
+########  ########
+```
+
+
+## 📏 Regras Gerais
+- A altura deve estar entre **1 e 8** (inclusive).
+- Cada linha terá:
+  - Espaços à esquerda
+  - Hashes `#` da primeira pirâmide
+  - **Um espaços** central
+  - Hashes `#` da segunda pirâmide
+- Se o usuário errar o valor, deve perguntar novamente.
+
+
+### ▶️ Como Compilar e Executar (Mario)
+
+Para rodar o programa `marioDesafio.c`, abra o terminal na pasta onde o arquivo está localizado (Pasta com nome: Exercicio2) e execute os seguintes comandos:
+
+gcc marioDesafio.c -o marioDesafio <br>
+./marioDesafio.exe

@@ -11,15 +11,19 @@ int main(void)
     }
     while (numero < 1 || numero > 8);
 
-    for (int i = 0; i < numero; i++)    
+    for (int i = 0; i < numero; i++)
     {
         for (int j = 0; j < numero - 1 - i; j++)
         {
             printf(" ");
         }
-        for (int k = 0; k <= i; k++)
+        for (int k = 0; k < 2; k++)
         {
-            printf("#");
+            for (int l = 0; l <= i; l++)
+            {
+                printf("#");
+            }
+            printf(" ");
         }
         printf("\n");
     }
