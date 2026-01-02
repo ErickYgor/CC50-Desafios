@@ -136,3 +136,73 @@ Para rodar o programa `marioDesafio.c`, abra o terminal na pasta onde o arquivo 
 
 gcc marioDesafio.c -o marioDesafio <br>
 ./marioDesafio.exe
+</details>
+
+---
+
+### 3 Cash
+<details>
+<summary>💰 Algoritmos Gulosos (Troco Mínimo)</summary>
+
+Neste desafio do CC50, o objetivo é implementar um **algoritmo guloso (ambicioso)** para calcular o **menor número possível de moedas** necessário para fornecer o troco a um cliente.
+
+O problema é inspirado no funcionamento real de um caixa, que sempre escolhe a **maior moeda possível** a cada passo, reduzindo o valor restante até chegar a zero.
+
+As moedas disponíveis são:
+- 25 centavos
+- 10 centavos
+- 5 centavos
+- 1 centavo
+
+---
+
+## 🎯 Objetivo do Programa
+- Solicitar ao usuário um valor monetário **não negativo** (em reais, usando ponto).
+- Repetir a solicitação enquanto o valor informado for inválido ou negativo.
+- Converter o valor de reais para centavos, evitando erros de ponto flutuante.
+- Calcular o **número mínimo de moedas** necessárias usando um algoritmo guloso.
+- Imprimir **apenas um número inteiro** (total de moedas) como saída final.
+
+---
+
+## 🧠 Conceito Utilizado
+- **Algoritmo Guloso (Greedy Algorithm)**:
+  - Sempre escolhe a melhor solução local (maior moeda possível).
+  - Para o sistema de moedas utilizado (25, 10, 5 e 1), essa estratégia também gera a solução ótima global.
+
+---
+
+## 📌 Exemplos de Funcionamento
+
+Entrada: 0.41
+
+```
+Saída: 4
+```
+--- 
+
+Entrada Invalida:
+
+```
+números negativos
+letras
+números com vírgula
+```
+
+## 📏 Regras Gerais
+- O valor deve ser **maior ou igual a 0**.
+- A entrada é feita com ponto (`.`), não vírgula.
+- O valor é convertido de `float` para `int` (centavos) usando `round`.
+- A última linha do programa deve conter **somente o número mínimo de moedas**.
+
+---
+
+## ▶️ Como Compilar e Executar (Cash)
+
+Para rodar o programa `cash.c`, abra o terminal na pasta onde o arquivo está localizado  
+(Pasta com nome: `Exercicio3`) e execute os seguintes comandos:
+
+gcc cash.c -o cash  
+./cash.exe
+
+</details>
