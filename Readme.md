@@ -206,3 +206,87 @@ gcc cash.c -o cash
 ./cash.exe
 
 </details>
+
+---
+
+### 4 Credit
+<details>
+<summary>💳 Validação de Cartão de Crédito (Algoritmo de Luhn)</summary>
+
+Neste desafio do CC50, o objetivo é criar um programa em C capaz de **validar números de cartão de crédito** e identificar sua bandeira (**AMEX, MASTERCARD ou VISA**) utilizando o **Algoritmo de Luhn**.
+
+Os números de cartão possuem uma estrutura específica e uma soma de verificação (checksum) que permite detectar erros de digitação. O programa deve verificar essa soma e, se válida, analisar o formato do número para determinar a bandeira correta.
+
+---
+
+## 🎯 Objetivo do Programa
+- Solicitar ao usuário um número de cartão de crédito **inteiramente numérico**.
+- Aplicar o **Algoritmo de Luhn** para validar o número.
+- Identificar a bandeira do cartão com base:
+  - No número de dígitos
+  - Nos dígitos iniciais
+- Exibir **apenas uma palavra** como saída final:
+  - `AMEX`
+  - `MASTERCARD`
+  - `VISA`
+  - `INVALID`
+
+---
+
+## 🧠 Conceitos Utilizados
+- Algoritmo de Luhn (checksum)
+- Estruturas de repetição
+- Operações matemáticas com dígitos
+- Validação de entrada
+- Uso de tipos numéricos maiores (`long`)
+
+---
+
+## 📌 Regras de Validação
+
+### Algoritmo de Luhn
+1. Multiplicar por 2 cada segundo dígito, começando pelo penúltimo.
+2. Somar os dígitos dos produtos obtidos.
+3. Somar esse valor aos dígitos que não foram multiplicados.
+4. Se o total for múltiplo de 10, o cartão é válido.
+
+### Identificação das Bandeiras
+- **AMEX**
+  - 15 dígitos
+  - Começa com 34 ou 37
+- **MASTERCARD**
+  - 16 dígitos
+  - Começa com 51, 52, 53, 54 ou 55
+- **VISA**
+  - 13 ou 16 dígitos
+  - Começa com 4
+
+Se nenhuma regra for atendida, o cartão é considerado inválido.
+
+---
+
+## 📌 Exemplos de Funcionamento
+
+Entrada: 4003600000000014
+
+```
+Saída: VISA
+```
+
+---
+
+## 📏 Regras Gerais
+- O input deve ser apenas numérico (sem hífens).
+- A **última linha de saída** deve ser exatamente uma das opções válidas, seguida de `\n`.
+
+---
+
+## ▶️ Como Compilar e Executar (Credit)
+
+Para rodar o programa `credito.c`, abra o terminal na pasta onde o arquivo está localizado  
+(Pasta com nome: `Exercicio4`) e execute os seguintes comandos:
+
+gcc credito.c -o credito 
+./credito.exe
+
+</details>
