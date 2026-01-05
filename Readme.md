@@ -291,6 +291,8 @@ gcc credito.c -o credito
 
 </details>
 
+---
+
 ### 5 Population
 <details>
 <summary>🦙 Crescimento Populacional</summary>
