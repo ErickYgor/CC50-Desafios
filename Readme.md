@@ -290,3 +290,56 @@ gcc credito.c -o credito
 ./credito.exe
 
 </details>
+
+### 5 Population
+<details>
+<summary>🦙 Crescimento Populacional</summary>
+
+Neste laboratório do CC50, o objetivo é calcular quantos anos são necessários para que uma população de lhamas cresça de um tamanho inicial até atingir ou ultrapassar um tamanho final, seguindo regras específicas de crescimento e mortalidade anual.
+
+## 📘 Contexto
+A cada ano:
+- Nascem `n / 3` novas lhamas
+- Morrem `n / 4` lhamas
+- Valores decimais são truncados (não existem frações de lhamas)
+
+Exemplo:
+- População inicial: 1200  
+- Nascimentos: 1200 / 3 = 400  
+- Mortes: 1200 / 4 = 300  
+- População final do ano: 1300
+
+## 🎯 Objetivo do Programa
+- Solicitar ao usuário o tamanho inicial da população
+- Garantir que o valor inicial seja **maior ou igual a 9**
+- Solicitar o tamanho final da população
+- Garantir que o valor final seja **maior ou igual ao valor inicial**
+- Calcular quantos anos são necessários para atingir ou ultrapassar o tamanho final
+- Exibir o número de anos no formato adequado
+
+## 📌 Exemplo de Funcionamento
+
+Número inicial: 100
+Número final: 200
+
+Anos = 9
+
+## 📏 Regras Gerais
+- O tamanho inicial deve ser **≥ 9**
+- O tamanho final deve ser **≥ tamanho inicial**
+- O cálculo deve considerar apenas valores inteiros
+- O programa deve repetir as perguntas até receber entradas válidas
+
+## 🧠 Lógica Utilizada
+- Loop `do while` para validação de entrada
+- Loop `while` para simular o crescimento anual da população
+- Contador para armazenar o número de anos passados
+
+### ▶️ Como Compilar e Executar (Population)
+
+No terminal, dentro da pasta onde está o arquivo `nascimento.c`, execute:
+
+gcc nascimento.c -o nascimento  
+./nascimento
+
+</details>
