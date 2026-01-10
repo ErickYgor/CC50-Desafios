@@ -291,6 +291,8 @@ gcc credito.c -o credito
 
 </details>
 
+---
+
 ### 5 Population
 <details>
 <summary>🦙 Crescimento Populacional</summary>
@@ -346,7 +348,7 @@ gcc nascimento.c -o nascimento
 
 ---
 
-### 4 Scrabble
+### 6 Scrabble
 <details>
 <summary>🔤 Jogo Scrabble (Pontuação de Palavras)</summary>
 
