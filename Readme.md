@@ -343,3 +343,51 @@ gcc nascimento.c -o nascimento
 ./nascimento
 
 </details>
+
+---
+
+### 4 Scrabble
+<details>
+<summary>🔤 Jogo Scrabble (Pontuação de Palavras)</summary>
+
+Neste desafio do CC50, o objetivo é simular uma versão simples do jogo **Scrabble**, comparando duas palavras digitadas por jogadores diferentes e determinando qual delas possui a maior pontuação.
+
+## 📘 Contexto
+No Scrabble, cada letra do alfabeto possui um valor de pontos específico.  
+A pontuação de uma palavra é a soma dos pontos de todas as suas letras.
+
+Exemplo:
+- Palavra: Code
+- Pontuação: C (3) + O (1) + D (2) + E (1) = 7 pontos
+
+## 🎯 Objetivo do Programa
+- Solicitar uma palavra para o **Jogador 1**
+- Solicitar uma palavra para o **Jogador 2**
+- Calcular a pontuação de cada palavra com base nos valores das letras
+- Comparar as pontuações
+- Informar o vencedor ou se houve empate
+
+## 📌 Exemplo de Funcionamento
+
+Player 1: COMPUTER
+Player 2: science
+Player 1 wins!
+
+## 📏 Regras Gerais
+- Letras maiúsculas e minúsculas possuem o **mesmo valor**
+- Caracteres que **não são letras** valem **0 pontos**
+- Não é necessário verificar se a palavra existe em um dicionário
+- O programa deve comparar apenas as pontuações finais
+
+## 🧠 Lógica Utilizada
+- Uso de um array `POINTS` para armazenar o valor de cada letra
+- Função auxiliar `compute_score()` para calcular a pontuação de uma palavra
+- Funções da biblioteca `ctype.h` para identificar letras maiúsculas e minúsculas
+- Estrutura condicional para determinar o vencedor
+
+### ▶️ Como Compilar e Executar (Scrabble)
+
+No terminal, dentro da pasta onde está o arquivo `palavra.c`, execute:
+
+gcc palavra.c -o palavra  
+./palavra
