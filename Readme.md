@@ -393,3 +393,79 @@ No terminal, dentro da pasta onde está o arquivo `palavra.c`, execute:
 
 gcc palavra.c -o palavra  
 ./palavra
+
+</details>
+
+---
+
+### 7 Readability
+<details>
+<summary>📖 Legibilidade de Texto (Índice Coleman–Liau)</summary>
+
+Neste desafio do CC50, o objetivo é desenvolver um programa em C capaz de analisar a legibilidade de um texto, estimando o nível de escolaridade necessário para compreendê-lo, utilizando o Índice Coleman–Liau.
+
+O índice considera a quantidade média de letras, palavras e frases para determinar o nível de leitura do texto.
+
+---
+
+## 🎯 Objetivo do Programa
+- Solicitar ao usuário um texto completo.
+- Contar:
+  - Letras
+  - Palavras
+  - Frases
+- Calcular o índice de legibilidade usando a fórmula de Coleman–Liau.
+- Exibir o resultado no formato exato exigido pelo CC50.
+
+---
+
+## 🧠 Fórmula Utilizada
+
+index = 0.0588 * L - 0.296 * S - 15.8
+
+Onde:
+- L = número médio de letras por 100 palavras
+- S = número médio de frases por 100 palavras
+
+---
+
+## 📌 Exemplos de Funcionamento
+
+Entrada:
+One fish. Two fish. Red fish. Blue fish.
+
+Saída:
+Grade 3
+
+---
+
+## 📏 Regras Gerais
+- Apenas caracteres alfabéticos contam como letras.
+- Palavras são separadas por espaços.
+- Frases terminam com ".", "!" ou "?".
+- Letras maiúsculas e minúsculas são tratadas da mesma forma.
+- A saída deve ser exatamente uma das seguintes:
+  - Before Grade 1
+  - Grade X (onde X é a grade)
+  - Grade 16+
+
+---
+
+## 🧠 Conceitos Utilizados
+- Manipulação de strings
+- Laços de repetição
+- Funções da biblioteca ctype.h
+- Conversão de tipos numéricos
+- Arredondamento com round()
+
+---
+
+### ▶️ Como Compilar e Executar (legibilidade.c)
+
+Para rodar o programa legibilidade.c, abra o terminal na pasta onde o arquivo está localizado  
+(Pasta com nome: Exercicio7) e execute os seguintes comandos:
+
+gcc legibilidade.c -o legibilidade  
+./legibilidade.exe
+
+</details>
